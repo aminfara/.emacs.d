@@ -25,11 +25,11 @@
   (unless (package-installed-p package)
     (package-install package)))
 
-(load-theme 'solarized-dark t)
 ;; make the fringe stand out from the background
 (setq solarized-distinct-fringe-background t)
 ;; make the modeline high contrast
 (setq solarized-high-contrast-mode-line t)
+(load-theme 'solarized-dark t)
 
 ;; scroll one line at a time (less "jumpy" than defaults)
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
